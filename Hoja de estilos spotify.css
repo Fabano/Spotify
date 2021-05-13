@@ -1,0 +1,341 @@
+*{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+cursor: default;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url(Imágenes/Scrollbar.png);
+    background-size: cover;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff49;
+    transition: all 1s ease-in;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff65;
+}
+
+body {
+    background-color: #131313;
+}
+#center {
+    margin-top: 70px;
+    margin-left: 259px;
+}
+#izquierda {
+    position: fixed;
+    background-color: #000000;
+    height: 100%;
+    width: 232px;
+    left: 0;
+    top: 0;
+    box-sizing:border-box;
+    padding-top: 30px;
+    padding-left: 7px;
+    padding-right: 8px;
+}
+#derecha {
+    position: fixed;
+    background-image: url("Imágenes/Fondo.png");
+    height: 100%;
+    width: 258px;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+#friends{
+    text-align: center;
+}
+#friends img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.paginas {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+    box-sizing:border-box;
+    padding-left: 10px;
+    filter: brightness(70%);
+    transition: all .5s ease;
+}
+#home {
+    background-color: #282828;
+    border-radius: 3%;
+    filter: brightness(1);
+}
+#home p {
+    color: #fafeff;
+}
+.paginas p {
+    font-family: 'Yantramanav', sans-serif;
+    color: #fafeff;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+}
+.paginas:hover {
+    filter: brightness(1);
+    cursor: pointer;
+}
+#header {
+    height: 60px;
+    width: 65.5%;
+    background-color: #25252594;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 233px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 7px;
+}
+.right {
+    float: right;
+    width: 130px;
+    height: auto;
+    margin-right: 30px;
+    cursor: pointer;
+    filter: brightness(1.3);
+}
+#col {
+    opacity: 70%;
+}
+#crec {
+    opacity: 90%;
+}
+#col:hover{
+    transform: scale(1.01);
+}
+#crec:hover {
+    transform: scale(1.05);
+}
+.logo {
+    width: 17px;
+    height: auto;
+    margin: 10px;
+    margin-right: 15px;
+}
+.logo-special {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+    margin-right: 15px;
+}
+.naveg {
+    width: 30px;
+    height: auto;
+    margin-left: 17px;
+    opacity: 70%;
+    filter: brightness(1.3);
+    cursor: not-allowed;
+}
+#playlist {
+    font-family: 'Yantramanav', sans-serif;
+    color: #fafeff;
+    font-weight: 700;
+    float: left;
+    filter: brightness(70%);
+    margin-left: 19px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+#container{
+    width: 903px;
+    height: 176px;
+}
+#container > div{
+    float: left;
+    margin-bottom: 16px;
+    margin-right: 24px;
+    width: 277px;
+    height: 80px;
+    background-color: #2a2a2a;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition:background .2s ease-in;
+    cursor: pointer;
+}
+#container > div:hover{
+    background-color: #414141;
+}
+#container > div:hover .boton{
+    opacity: 100%;
+}
+.todo{
+    width: 100%;
+    height: 296px;
+}
+.todo > div:hover .boton-reciente{
+    opacity: 100%;
+    top: 140px;
+}
+.todo > div{
+    justify-content: center;
+    float: left;
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-right: 24px;
+    width: 170px;
+    height: 248px;
+    background-color: #161616;
+    border-radius: 3px;
+    align-items: baseline;
+    transition:background .2s ease-in;
+    position: relative;
+    cursor: pointer;
+}
+.todo > div:hover{
+    background-color: #282828;
+}
+.titulo-reciente {
+    font-family: 'Yantramanav', sans-serif;
+    vertical-align: middle;
+    float: left;
+    width: 90%;
+    margin-top: 16px;
+    margin-bottom: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.by {
+    font-family: 'Yantramanav', sans-serif;
+    vertical-align: middle;
+    float: left;
+    margin: 0px;
+    width: 95%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+h1 {
+    color: #fafeff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+}
+p {
+    color: #fafeff; 
+    font-family: 'Montserrat', sans-serif;
+}
+#text {
+    font-family: 'Yantramanav', sans-serif;
+    color: #fafeff;
+    font-weight: 700;
+    filter: brightness(70%);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fafeff;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+.stimulate {
+    width: 177px;
+    height: 177px;
+    overflow: hidden;
+}
+#wiki {
+    font-family: 'Chango', cursive;
+}
+li {
+    color: #fafeff; 
+    font-family: 'Montserrat', sans-serif;
+}
+table {
+    margin-left: 50px;
+}
+th {
+    color: #fafeff; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 8px;
+    width: 200px;
+}
+td {
+    color: #fafeff; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+.recorte {
+    width: 177px;
+    height: 177px;
+    overflow: hidden;
+    border-radius: 8%;
+}
+.redondo {
+    width: 177px;
+    height: 177px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.fotos {
+    width: auto;
+    height: 100%;
+    margin-left: -70px;
+}
+#andres {
+    width: auto;
+    height: 100%;
+}
+.recom {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.recent {
+    width: 100%;
+    height: auto;
+    float: none;
+}
+#container > div > p.titulo-recom {
+    float: left;
+    margin-left: 16px;
+    font-family: 'Yantramanav', sans-serif;
+    overflow: visible;
+    width: 40%;
+    font-weight:700;
+    cursor: pointer;
+}
+.boton {
+    height: 50%;
+    width: auto;
+    margin-left: 20px;
+    opacity: 0%;
+    transition: opacity .2s ease-in, transform .1s ease-in;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+}
+.boton:hover{
+    transform: scale(1.1, 1.1);
+}
+.boton-reciente {
+    height: auto;
+    width: 20%;
+    opacity: 0%;
+    transition: opacity .3s ease-in, transform .1s ease-in-out, top .3s;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 150px;
+    left: 138px;
+}
+.boton-reciente:hover{
+    transform: scale(1.1, 1.1);
+}
