@@ -26,7 +26,7 @@ body {
 #center {
     margin-top: 70px;
     margin-left: 259px;
-    margin-bottom: 60px;
+    margin-bottom:100px;
 }
 #izquierda {
     position: fixed;
@@ -51,6 +51,22 @@ body {
     align-items: center;
     background-size: cover;
 }
+#left-bar {
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+#left-bar div {
+    height: 100%;
+    width: 200px;
+}
+#right-repr {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
 #cancion {
     position: fixed;
     height: 91px;
@@ -66,21 +82,24 @@ body {
     height: 56px;
     width: auto;
     margin-right: 14px;
+    float: left;
 }
 .logo-gus-quit {
     width: 15px;
     height: auto;
     margin: 10px;
     margin-right: 15px;
+    z-index: 20;
+    float: left;
 }
 .logo-gus-quit:hover {
-    filter: brightness(1.3);
-}
-#repro-musi {
-    width: 37.986111111111114vw;
+    filter: brightness(1.5);
 }
 #center-repr {
-    margin: auto;
+    justify-content: center;
+    display: flex;
+    width: 55%;
+    margin-bottom: 5px;
 }
 .titulo-reciente.music {
     margin-top: 0;
@@ -90,10 +109,12 @@ body {
     font-family: 'Yantramanav', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    width: auto;
 }
 .titulo-reciente.music a:link {
     text-decoration: none;
     color: #ebebeb;
+    cursor: pointer;
 }
 .titulo-reciente.music a:hover {
     text-decoration: underline;
@@ -102,6 +123,7 @@ body {
 .music.by a:link {
     text-decoration: none;
     color: #a5a5a5;
+    cursor: pointer;
 }
 .music.by a:hover {
     text-decoration: underline;
@@ -110,9 +132,47 @@ body {
 .music.by {
     margin-top: -5px;
     font-size: 13px;
+    z-index: 40;
+    width: auto;
 }
-#repro-musi div {
-    width: 147px;
+#barra {
+    background: #535353;
+    height: 5px;
+    border-radius: 10px;
+    width: 528px;
+}
+#brothi {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.controles {
+    width: auto;
+    height: 11px;
+    margin-bottom: 17px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.controles.ret {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.controles.av {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+#play {
+    width: auto;
+    height: 30px;
+    margin-top: 5px;
+    transition: all .01s ease-in;
+}
+.controles:hover {
+    filter: brightness(1.4);
+}
+#play:hover {
+    transform: scale(1.05);
 }
 #friends{
     text-align: center;
@@ -120,6 +180,14 @@ body {
 #friends img:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+.settings {
+    width: auto;
+    height: 13px;
+    margin-left: 15px;
+}
+.settings:hover {
+    filter: brightness(1.5);
 }
 .paginas {
     width: 100%;
