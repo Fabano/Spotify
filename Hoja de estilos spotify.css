@@ -26,6 +26,7 @@ body {
 #center {
     margin-top: 70px;
     margin-left: 259px;
+    margin-bottom: 60px;
 }
 #izquierda {
     position: fixed;
@@ -49,6 +50,69 @@ body {
     display: flex;
     align-items: center;
     background-size: cover;
+}
+#cancion {
+    position: fixed;
+    height: 91px;
+    width: 100%;
+    background-color: #181818;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+#canc-imag {
+    height: 56px;
+    width: auto;
+    margin-right: 14px;
+}
+.logo-gus-quit {
+    width: 15px;
+    height: auto;
+    margin: 10px;
+    margin-right: 15px;
+}
+.logo-gus-quit:hover {
+    filter: brightness(1.3);
+}
+#repro-musi {
+    width: 37.986111111111114vw;
+}
+#center-repr {
+    margin: auto;
+}
+.titulo-reciente.music {
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    color: #ebebeb;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.titulo-reciente.music a:link {
+    text-decoration: none;
+    color: #ebebeb;
+}
+.titulo-reciente.music a:hover {
+    text-decoration: underline;
+    color: #ebebeb;
+}
+.music.by a:link {
+    text-decoration: none;
+    color: #a5a5a5;
+}
+.music.by a:hover {
+    text-decoration: underline;
+    color: #ebebeb;
+}
+.music.by {
+    margin-top: -5px;
+    font-size: 13px;
+}
+#repro-musi div {
+    width: 147px;
 }
 #friends{
     text-align: center;
